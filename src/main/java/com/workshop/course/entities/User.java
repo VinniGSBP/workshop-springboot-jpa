@@ -10,13 +10,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tb_users")
+@Table(name = "tb_user")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String name;
 	private String email;
 	private String nome;
@@ -25,7 +25,7 @@ public class User implements Serializable {
 	public User() {
 	}
 
-	public User(long id, String name, String email, String nome, String password) {
+	public User(Long id, String name, String email, String nome, String password) {
 		super();
 		this.id = id;
 		this.name = name;
