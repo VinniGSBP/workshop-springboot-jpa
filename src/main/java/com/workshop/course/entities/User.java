@@ -24,7 +24,7 @@ public class User implements Serializable {
 	private Long id;
 	private String name;
 	private String email;
-	private String nome;
+	private String phone;
 	private String password;
 
 	@JsonIgnore
@@ -34,12 +34,12 @@ public class User implements Serializable {
 	public User() {
 	}
 
-	public User(Long id, String name, String email, String nome, String password) {
+	public User(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.nome = nome;
+		this.phone = phone;
 		this.password = password;
 	}
 
@@ -67,12 +67,12 @@ public class User implements Serializable {
 		this.email = email;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public String getPassword() {
